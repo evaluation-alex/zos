@@ -11,13 +11,11 @@ import add from '../../src/scripts/add';
 import bumpVersion from '../../src/scripts/bump';
 import ZosPackageFile from '../../src/models/files/ZosPackageFile';
 import remove from '../../src/scripts/remove';
-import EventsFilter from "../../src/models/status/EventsFilter";
 import Dependency from '../../src/models/dependency/Dependency';
 
 const should = require('chai').should();
 
 const ImplV1 = Contracts.getFromLocal('ImplV1');
-const AppDirectory = Contracts.getFromNodeModules('zos-lib', 'AppDirectory');
 const PackageContract = Contracts.getFromNodeModules('zos-lib', 'Package');
 const ImplementationDirectory = Contracts.getFromNodeModules('zos-lib', 'ImplementationDirectory');
 
